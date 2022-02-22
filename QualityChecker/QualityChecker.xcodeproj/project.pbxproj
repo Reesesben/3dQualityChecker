@@ -11,6 +11,11 @@
 		B5C8466527C500F200197848 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C8466427C500F200197848 /* ContentView.swift */; };
 		B5C8466727C500F400197848 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C8466627C500F400197848 /* Assets.xcassets */; };
 		B5C8466A27C500F400197848 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C8466927C500F400197848 /* Preview Assets.xcassets */; };
+		B5C8467627C5045700197848 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C8467527C5045700197848 /* Drawing.swift */; };
+		B5C8467827C5045F00197848 /* ThreeDeeObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C8467727C5045F00197848 /* ThreeDeeObject.swift */; };
+		B5C8467A27C504F300197848 /* DrawingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C8467927C504F300197848 /* DrawingService.swift */; };
+		B5C8467C27C504FD00197848 /* ThreeDeeObjectService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C8467B27C504FD00197848 /* ThreeDeeObjectService.swift */; };
+		B5C8467E27C5051B00197848 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C8467D27C5051B00197848 /* MainViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		B5C8466427C500F200197848 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5C8466627C500F400197848 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C8466927C500F400197848 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B5C8467527C5045700197848 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
+		B5C8467727C5045F00197848 /* ThreeDeeObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDeeObject.swift; sourceTree = "<group>"; };
+		B5C8467927C504F300197848 /* DrawingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingService.swift; sourceTree = "<group>"; };
+		B5C8467B27C504FD00197848 /* ThreeDeeObjectService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeDeeObjectService.swift; sourceTree = "<group>"; };
+		B5C8467D27C5051B00197848 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +61,11 @@
 		B5C8466127C500F200197848 /* QualityChecker */ = {
 			isa = PBXGroup;
 			children = (
-				B5C8466227C500F200197848 /* QualityCheckerApp.swift */,
-				B5C8466427C500F200197848 /* ContentView.swift */,
-				B5C8466627C500F400197848 /* Assets.xcassets */,
+				B5C8467027C503E300197848 /* Models */,
+				B5C8467127C503E900197848 /* Views */,
+				B5C8467227C503EC00197848 /* ViewModels */,
+				B5C8467327C503F000197848 /* Services */,
+				B5C8467427C5041100197848 /* Resources */,
 				B5C8466827C500F400197848 /* Preview Content */,
 			);
 			path = QualityChecker;
@@ -65,6 +77,49 @@
 				B5C8466927C500F400197848 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B5C8467027C503E300197848 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8467527C5045700197848 /* Drawing.swift */,
+				B5C8467727C5045F00197848 /* ThreeDeeObject.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5C8467127C503E900197848 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8466227C500F200197848 /* QualityCheckerApp.swift */,
+				B5C8466427C500F200197848 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B5C8467227C503EC00197848 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8467D27C5051B00197848 /* MainViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		B5C8467327C503F000197848 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8467927C504F300197848 /* DrawingService.swift */,
+				B5C8467B27C504FD00197848 /* ThreeDeeObjectService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B5C8467427C5041100197848 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B5C8466627C500F400197848 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +193,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5C8466527C500F200197848 /* ContentView.swift in Sources */,
+				B5C8467A27C504F300197848 /* DrawingService.swift in Sources */,
+				B5C8467E27C5051B00197848 /* MainViewViewModel.swift in Sources */,
+				B5C8467C27C504FD00197848 /* ThreeDeeObjectService.swift in Sources */,
 				B5C8466327C500F200197848 /* QualityCheckerApp.swift in Sources */,
+				B5C8467827C5045F00197848 /* ThreeDeeObject.swift in Sources */,
+				B5C8467627C5045700197848 /* Drawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
