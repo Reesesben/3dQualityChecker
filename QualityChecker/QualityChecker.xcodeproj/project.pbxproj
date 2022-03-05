@@ -9,25 +9,29 @@
 /* Begin PBXBuildFile section */
 		B572037C27D3582C00F95A18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572037B27D3582C00F95A18 /* AppDelegate.swift */; };
 		B572037E27D3582C00F95A18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572037D27D3582C00F95A18 /* SceneDelegate.swift */; };
-		B572038027D3582C00F95A18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572037F27D3582C00F95A18 /* ViewController.swift */; };
 		B572038327D3582C00F95A18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B572038127D3582C00F95A18 /* Main.storyboard */; };
 		B572038527D3583500F95A18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B572038427D3583500F95A18 /* Assets.xcassets */; };
 		B572038827D3583500F95A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B572038627D3583500F95A18 /* LaunchScreen.storyboard */; };
 		B572039527D3591300F95A18 /* SyncService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572039427D3591300F95A18 /* SyncService.swift */; };
 		B572039727D3592100F95A18 /* Drawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572039627D3592100F95A18 /* Drawing.swift */; };
+		B572039927D35C4600F95A18 /* DrawingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572039827D35C4600F95A18 /* DrawingsTableViewController.swift */; };
+		B572039C27D35DCA00F95A18 /* DrawingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572039B27D35DCA00F95A18 /* DrawingTableViewCell.swift */; };
+		B572039F27D35FA200F95A18 /* DateExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = B572039E27D35FA200F95A18 /* DateExtention.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B572037827D3582C00F95A18 /* QualityChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QualityChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B572037B27D3582C00F95A18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B572037D27D3582C00F95A18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B572037F27D3582C00F95A18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B572038227D3582C00F95A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B572038427D3583500F95A18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B572038727D3583500F95A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B572038927D3583500F95A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B572039427D3591300F95A18 /* SyncService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncService.swift; sourceTree = "<group>"; };
 		B572039627D3592100F95A18 /* Drawing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drawing.swift; sourceTree = "<group>"; };
+		B572039827D35C4600F95A18 /* DrawingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingsTableViewController.swift; sourceTree = "<group>"; };
+		B572039B27D35DCA00F95A18 /* DrawingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingTableViewCell.swift; sourceTree = "<group>"; };
+		B572039E27D35FA200F95A18 /* DateExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtention.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 				B572039127D3588500F95A18 /* Models */,
 				B572039027D3588000F95A18 /* Views */,
 				B572039227D3588A00F95A18 /* View Controllers */,
+				B572039D27D35F7800F95A18 /* Extentions */,
 				B572039327D3589100F95A18 /* Services */,
 				B572038F27D3587700F95A18 /* Resources */,
 			);
@@ -83,6 +88,7 @@
 		B572039027D3588000F95A18 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B572039A27D35D9F00F95A18 /* Custom Cells */,
 				B572038127D3582C00F95A18 /* Main.storyboard */,
 				B572038627D3583500F95A18 /* LaunchScreen.storyboard */,
 			);
@@ -100,7 +106,7 @@
 		B572039227D3588A00F95A18 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				B572037F27D3582C00F95A18 /* ViewController.swift */,
+				B572039827D35C4600F95A18 /* DrawingsTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -111,6 +117,22 @@
 				B572039427D3591300F95A18 /* SyncService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		B572039A27D35D9F00F95A18 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B572039B27D35DCA00F95A18 /* DrawingTableViewCell.swift */,
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		B572039D27D35F7800F95A18 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				B572039E27D35FA200F95A18 /* DateExtention.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,10 +206,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B572038027D3582C00F95A18 /* ViewController.swift in Sources */,
+				B572039C27D35DCA00F95A18 /* DrawingTableViewCell.swift in Sources */,
 				B572037C27D3582C00F95A18 /* AppDelegate.swift in Sources */,
 				B572039527D3591300F95A18 /* SyncService.swift in Sources */,
+				B572039F27D35FA200F95A18 /* DateExtention.swift in Sources */,
 				B572037E27D3582C00F95A18 /* SceneDelegate.swift in Sources */,
+				B572039927D35C4600F95A18 /* DrawingsTableViewController.swift in Sources */,
 				B572039727D3592100F95A18 /* Drawing.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

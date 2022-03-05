@@ -11,4 +11,5 @@ struct Drawing {
     let name: String
     let dateCreated: Date
     let dateEdited: Date
+    let drawingImage: Data
 }
