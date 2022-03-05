@@ -2,7 +2,7 @@
 //  Drawing.swift
 //  QualityChecker
 //
-//  Created by Ben Erekson on 2/22/22.
+//  Created by Ben Erekson on 3/5/22.
 //
 
 import Foundation
@@ -10,4 +10,5 @@ import Foundation
 struct Drawing {
     let name: String
     let dateCreated: Date
+    let dateEdited: Date
 }
